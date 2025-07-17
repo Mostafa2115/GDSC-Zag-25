@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            direction: ltr;
+            background: #fff;
+            padding: 30px;
+        }
+
+        .main-list {
+            list-style: none;
+            padding: 0;
+        }
+
+        .main-list li {
+            background: #f0f0f0;
+            padding: 20px;
+            margin-bottom: 20px;
+            width: 400px; 
+        }
+
+        .category-title {
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        .decimal-list {
+            list-style-type: decimal;
+            padding-left: 30px;
+        }
+
+        .roman-list {
+            list-style-type: upper-roman;
+            padding-left: 30px;
+        }
+
+        .circle-list {
+            list-style-type: circle;
+            padding-left: 30px;
+        }
+
+        .decimal-list li,
+        .roman-list li,
+        .circle-list li {
+            background: white;
+            padding: 10px;
+            margin-bottom: 10px;
+            border-radius: 3px;
+            border: 1px solid #ddd;
+        }
+
+        
+    </style>
+</head>
+<body>
+    <ul class="main-list">
+  <li class="main-item">
+    <div class="category-title">HTML</div>
+    <ol class="decimal-list">
+      <li>Slim</li>
+      <li>Pugjs</li>
+      <li>HAML</li>
+    </ol>
+  </li>
+  <li class="main-item">
+    <div class="category-title">CSS</div>
+    <ol class="roman-list">
+      <li>SASS</li>
+      <li>LESS</li>
+      <li>PostCSS</li>
+    </ol>
+  </li>
+  <li class="main-item">
+    <div class="category-title">JavaScript</div>
+    <ul class="circle-list">
+      <li>Vuejs</li>
+      <li>Sveltejs</li>
+    </ul>
+  </li>
+</ul>
+
+</body>
+</html>
