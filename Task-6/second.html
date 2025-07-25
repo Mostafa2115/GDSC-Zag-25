@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+      div {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: Arial, sans-serif;
+  font-size: 0;
+  margin: 100px auto;
+  width: fit-content;
+  color: transparent;
+}
+
+
+div::before {
+  content: "1";
+  background-color: red;
+  color: white;
+  font-size: 40px;
+  font-weight: bold;
+  width: 60px;
+  height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: -20px; 
+  z-index: 2;
+  position: relative;
+}
+
+
+div::after {
+  content: "Hello, Welcome To Elzero Web School";
+  background-color: #ddd;
+  color: black;
+  font-size: 35px;
+  padding: 30px;
+  padding-left: 50px; 
+  display: inline-block;
+  z-index: 1;
+  position: relative;
+  
+}  
+    </style>
+</head>
+<body>
+  <div>1 Hello, Welcome To Elzero Web School</div>
+</body>
+</html>
