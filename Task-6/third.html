@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+      body {
+  counter-reset: item;
+}
+
+p {
+  display: flex;
+  align-items: center;
+  background-color: #f1f1f1;
+  border-right: 5px solid red;
+  margin-bottom: 15px;
+  padding: 20px 20px 20px 80px;
+  font-family: Arial, sans-serif;
+  font-size: 20px;
+  position: relative;
+}
+
+p::before {
+  content: counter(item);
+  counter-increment: item;
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 60px;
+  background-color: #f44336;
+  color: white;
+  font-size: 24px;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+    </style>
+</head>
+<body>
+  <p>This Is Very Very Long Product Title</p>
+<p>This Is Very Very Long Product Title</p>
+<p>This Is Very Very Long Product Title</p>
+<p>This Is Very Very Long Product Title</p>
+<p>This Is Very Very Long Product Title</p>
+<p>This Is Very Very Long Product Title</p>
+</body>
+</html>
