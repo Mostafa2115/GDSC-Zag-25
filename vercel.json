@@ -1,5 +1,12 @@
 {
-  "$schema": "https://openapi.vercel.sh/vercel.json",
-  "outputDirectory": "Task-10",
-  "cleanUrls": true
+  "version": 2,
+  "public": true,
+  "builds": [
+    { "src": "Task-10/index.html", "use": "@vercel/static" },
+    { "src": "Task-10/**/*", "use": "@vercel/static" }
+  ],
+  "routes": [
+    { "src": "/(.*)", "dest": "Task-10/index.html" }
+  ]
 }
+
